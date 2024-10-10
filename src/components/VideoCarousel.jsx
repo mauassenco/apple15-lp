@@ -29,7 +29,7 @@ const VideoCarousel = () => {
     gsap.to("#slider", {
       transform: `translateX(${-100 * videoId}%)`,
       duration: 2,
-      ease: "power2.inOut", // show visualizer https://gsap.com/docs/v3/Eases
+      ease: "power2.inOut",
     })
 
     // video animation to play the video when it is in the view
@@ -125,7 +125,7 @@ const VideoCarousel = () => {
     }
   }, [startPlay, videoId, isPlaying, loadedData])
 
-  // vd id is the id for every video until id becomes number 3
+  // video id is the id for every video until id becomes number 3
   const handleProcess = (type, i) => {
     switch (type) {
       case "video-end":
